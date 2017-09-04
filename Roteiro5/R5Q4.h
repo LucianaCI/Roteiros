@@ -1,7 +1,3 @@
-//
-// Created by luciana on 27/08/17.
-//
-
 #ifndef PESSOA_H
 #define PESSOA_H
 
