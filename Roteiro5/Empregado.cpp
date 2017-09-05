@@ -1,15 +1,9 @@
-#include "R5Q3.h"
+#include "Empregado.h"
 #include<string>
 
 using namespace std;
 
-Empregado::Empregado(){
-	
-	nome = "";
-	sobrenome = "";
-	salario = 1000;
-}
-
+Empregado::Empregado(){};
 
 Empregado::Empregado(string nome, string sobrenome, float salario){
 	this->nome = nome;

@@ -8,10 +8,11 @@ using namespace std;
 
 
 class Pessoas {
-public:
+private:
     string nome;
     int idade, telefone;
 
+public:
 Pessoas(string nome);
 Pessoas(string nome, int idade, int telefone);
 

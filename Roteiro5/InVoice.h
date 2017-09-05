@@ -7,12 +7,13 @@ using namespace std;
 
 class InVoice{
 
-public:
+private:
 
 int numero,quantidade;
 float preco;
 string descricao;
 
+public:
 InVoice();
 InVoice(int numero, string descricao, int quantidade, float preco);
 

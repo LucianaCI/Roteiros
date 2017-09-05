@@ -1,16 +1,17 @@
-#ifndef MINHADATA_H
-#define MINHADATA_H
+#ifndef DATA_H
+#define DATA_H
 
 #include<iostream>
 
 
-class MinhaData{
+class Data{
 
-public:  
+private:  
 
 int dia, mes, ano;   
+public:
 
-MinhaData(int dia, int mes, int ano);
+Data(int dia, int mes, int ano);
 
 	int getDia();
         int getMes();    

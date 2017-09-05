@@ -8,11 +8,12 @@ using namespace std;
 
 class Empregado{
 
-public:
 
+private:
 string nome, sobrenome;
 float salario;
 
+public:
 Empregado();
 Empregado(string nome, string sobrenome, float salario);
 

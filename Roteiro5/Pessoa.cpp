@@ -1,8 +1,4 @@
-//
-// Created by luciana on 27/08/17.
-//
-
-#include "R5Q4.h"
+#include "Pessoa.h"
 #include <iostream>
 #include <string>
 
@@ -37,24 +33,4 @@ void Pessoas::setTelefone(int telefone){
     this->telefone = telefone;
 }
 
-int main(){
-
-    Pessoas registro("", 0, 0);
-    int n, i;
-
-    cout << "---- REGISTRO DE PESSOAS ----\nQuantas pessoas serao registradas?";
-    cin >> n;
-    for(i=0; i<n; i++){
-        cout << "\nRegistro " << i+1 << "\n";
-        cout << "Nome: ";
-        cin >> registro.nome;
-        cout << "Idade: ";
-        cin >> registro.idade;
-        cout << "Telefone: ";
-        cin >> registro.telefone;
-    }
-    cout << "\n\nForam registradas " << n << " pessoas.\n";
-    return 0;
-
-}
 

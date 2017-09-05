@@ -1,25 +1,31 @@
 #include<iostream>
-#include "R5Q1.h"
+#include "Data.h"
 
 using namespace std;
 
 int main(){
 
-MinhaData d(21, 06, 1997);
+Data d(21, 06, 1997);
+int dia, mes, ano;
 
 cout << "---- INSIRA UMA DATA ----\n";
-cin >> d.dia >> d.mes >> d.ano;
+cin >> dia >> mes >> ano;
 
-	if(d.ano > 2017 || d.ano < 1900){
+d.setDia(dia);
+d.setMes(mes);
+d.setAno(ano);
+
+
+	if(ano > 2017 || ano < 1900){
           cout << "O ano deve estar entre 1900 e 2017\n";
 	}
 
-	if(d.dia > 31){
-	   d.dia -= 31;
-	   d.mes++; 
-		if(d.mes > 12){
-		   d.mes -= 12; 
-		   d.ano++;
+	if(dia > 31){
+	   dia -= 31;
+	   mes++; 
+		if(mes > 12){
+		   mes -= 12; 
+		   ano++;
 		}
 	}
 
