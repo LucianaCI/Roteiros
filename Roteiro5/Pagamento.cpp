@@ -1,28 +1,27 @@
 #include "Pagamento.h"
-#include "ControleDePagamentos.h"
-#include <iostream>
-#include <cstring>
+#include<iostream>
 #include <string>
 
 using namespace std;
 
-Pagamento::Pagamento(string nome, float pagamento) {
-    this->nomeDoFuncionario = nome;
-    this->valorPagamento = pagamento;
-}
+Pagamento::Pagamento(){}
 
-void Pagamento::setNome(string nome) {
-    this->nomeDoFuncionario = nome;
-}
+Pagamento::~Pagamento(){}
 
-string Pagamento::getNome() {
-    return nomeDoFuncionario;
-}
-float Pagamento::getPagamento() {
-    return valorPagamento;
-}
+    void Pagamento:: setnomeDoFuncionario(string nome){
+                nomeDoFuncionario = nome;
+
+            }
+    void Pagamento:: setvalorPagamento(double vp){
+                 valorPagamento = vp;
+            }
 
 
+    string Pagamento:: getnomeDoFuncionario(){
+                return nomeDoFuncionario;
 
+            }
+    double Pagamento:: getvalorPagamento(){
+                 return valorPagamento;
 
-
+            }

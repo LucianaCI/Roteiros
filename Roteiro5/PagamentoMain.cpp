@@ -1,32 +1,18 @@
+#include <iostream>
+#include "ControleDePagamentos.h"
 #include"Pagamento.h"
-#include"ControleDePagamentos.h"
-#include<iostream>
-#include<string>
-#include<cstring>
-
+#include <string>
 
 using namespace std;
 
+int main()
+{
 
-int main(){
-    ControleDePagamentos sistema[10];
-    Pagamento registro[10];
-    int i, n;
+    ControleDePagamentos funcionario1 = ControleDePagamentos();
 
-    cout<<"---- CONTROLE DE PAGAMENTOS ----\n";
-    cout<<"Quantos funcionarios serao verificados? ";
-    cin >> n;
-    for(i=0; i<n; i++){
-        cout<<"Funcionario "<< i+1<< "\n";
-        cout<<"Nome: ";
-        cin>> registro[i].nomeDoFuncionario;
-        cout<<"\nValor do pagamento: ";
-        cin>> registro[i].valorPagamento;
-    }
+    funcionario1.setPagamentos();
 
-sistema->setPagamentos(registro);
+    funcionario1.calculaTotalDePagamentos();
 
-    cout<<"Numero total de pagamentos: "<< sistema->calculaTotalDePagamentos();
-
-return 0;
+    funcionario1.existePagamentoParaFuncionario("antonio");
 }
