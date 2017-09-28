@@ -16,8 +16,8 @@ float Consultor::getSalario(){
 }
 
 float Consultor::getSalario(float percentual){
-	salario *= (1+percentual);
-	cout << "Seu salario acrescido de " << percentual << " eh: ";
+	salario = (salario*percentual*0.01) + salario;
+	cout << "Seu salario acrescido de " << percentual << "% eh: ";
 	return salario; 
 }
 
