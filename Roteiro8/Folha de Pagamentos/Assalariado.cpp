@@ -1,18 +1,35 @@
 #include "Assalariado.h"
-#include "Funcionario.h"
-#include <iostream>
-using namespace std;
 
 Assalariado::Assalariado(){
+    cout << "\n---Assalariado---\n";
+
+    //salario = s;
 }
+
 Assalariado::~Assalariado(){
+
+}
+
+void Assalariado::setNome(string n){
+    nome = n;
+}
+
+void Assalariado::setSalario(double s){
+    salario = s;
+}
+
+void Assalariado::setMatricula(int m){
+    matricula = m;
 }
 
 double Assalariado::calcularSalario(){
-        double salario;
+    return 4*salario;
+}
 
-	cout << "\nDigite o valor do seu salario fixo: ";
-	cin >> salario;
-	
-	return salario;
+string Assalariado::getNome(){
+    return nome;
+}
+
+int Assalariado::getMatricula(){
+    return matricula;
 }

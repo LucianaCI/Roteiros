@@ -1,29 +1,28 @@
-#ifndef ASSALARIADO_H
-#define ASSALARIADO_H
-
+#ifndef HORISTA_H
+#define HORISTA_H
 
 #include "Funcionario.h"
 
-class Assalariado : public Funcionario{
+class Horista : public Funcionario{
 
 protected:
-    double salario;
-    int matricula;
-    string nome;
+    double salario, hora;
 
 public:
 
-    Assalariado();
-    virtual ~Assalariado();
+    Horista();
+    virtual ~Horista();
 
     void setNome(string n);
     void setSalario(double s);
     void setMatricula(int m);
+    void setHora(double h);
 
     double calcularSalario();
     string getNome();
     int getMatricula();
+    double getHora();
+
+
 };
-
-
 #endif

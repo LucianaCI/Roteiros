@@ -1,21 +1,9 @@
-#include "SistemaGerenciarFolha.h"
-#include "Funcionario.h"
-#include "Assalariado.h"
-#include "Comissionado.h"
-#include "Horista.h"
-#include <string>
 #include <iostream>
+#include "SistemaGerenciaFolha.h"
 
-using namespace std;
+int main() {
 
-int main(){
+    SistemaGerenciaFolha s = SistemaGerenciaFolha();
 
-
-
-
-
-
-
-
-return 0;
+    return 0;
 }

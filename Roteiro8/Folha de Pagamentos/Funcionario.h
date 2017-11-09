@@ -2,23 +2,33 @@
 #define FUNCIONARIO_H
 
 #include <string>
+#include <iostream>
+
 using namespace std;
 
-class Funcionario{
+class Funcionario {
 
 protected:
-	string nome;
-	int matricula;
+    string nome;
+    int matricula;
+    double salario, hora, percentual, valorDeVendas;
+
 public:
-	Funcionario();
-	virtual ~Funcionario();	
+    Funcionario();
+    virtual ~Funcionario();
 
-	void setNome(string);
-	void setMatricula(int);
-	string getNome();
-	int getMatricula();
+    virtual void setNome(string n);
+    virtual void setSalario(double s);
+    virtual void setMatricula(int m);
+    virtual void setHora(double h);
+    virtual void setPercentual(double p);
+    virtual void setValorDeVendas(double vdv);
 
-	virtual double calculaSalario();
-
+    virtual double calcularSalario() = 0;
+    virtual string getNome();
+    virtual int getMatricula();
+    virtual double getHora();
+    virtual double getPercentual();
+    virtual double getValorDeVendas();
 };
 #endif

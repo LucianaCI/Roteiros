@@ -1,25 +1,49 @@
 #include "Comissionado.h"
-#include "Funcionario.h"
-
-#include <iostream>
-using namespace std;
 
 Comissionado::Comissionado(){
+    cout << "\n---Comissionado---\n";
 }
+
 Comissionado::~Comissionado(){
+
+}
+
+void Comissionado::setNome(string n){
+    nome = n;
+}
+
+void Comissionado::setSalario(double s){
+    salario = s;
+}
+
+void Comissionado::setMatricula(int m){
+    matricula = m;
 }
 
 double Comissionado::calcularSalario(){
-		double base;
-	cout << "\nDigite a quantidade de venda  na semana: ";
-	cin >> vendasSemanais;
-	cout << "\nDigite o salario base: ";
-	cin >> base;
-	cout << "\nDigite o percentual adicionado as vendas: ";
-	cin >> percentualComissao;
-base += (vendasSemanais*percentualComissao);
+    return 4*salario + percentual*valorDeVendas;
+}
 
-	cout << "\nO salario total de 4 semanas eh : R$ " << base;
+string Comissionado::getNome(){
+    return nome;
+}
 
-return base;
+int Comissionado::getMatricula(){
+    return matricula;
+}
+
+void Comissionado::setPercentual(double p){
+    percentual = p;
+}
+
+void Comissionado::setValorDeVendas(double vdv){
+    valorDeVendas = vdv;
+}
+
+double Comissionado::getPercentual(){
+    return percentual;
+}
+
+double Comissionado::getValorDeVendas(){
+    return valorDeVendas;
 }

@@ -1,26 +1,57 @@
 #include "Funcionario.h"
-#include <string>
-#include <iostream>
-
-using namespace std;
 
 Funcionario::Funcionario(){
+
 }
+
 Funcionario::~Funcionario(){
+
 }
-void Funcionario::setNome(string nome){
-	this->nome = nome;
+
+double Funcionario::calcularSalario() {///Parte1 importante para exception
+    return salario;
 }
-void Funcionario::setMatricula(int matricula){
-	this->matricula = matricula;
+
+void Funcionario::setNome(string n){
+    nome = n;
 }
+
 string Funcionario::getNome(){
-	return nome;
+    return nome;
 }
+
+void Funcionario::setSalario(double s){
+    salario = s;
+}
+
+void Funcionario::setMatricula(int m){
+    matricula = m;
+}
+
 int Funcionario::getMatricula(){
-	return matricula;
+    return matricula;
 }
-double Funcionario::calculaSalario(){
-	double salario;
-	return salario;
+
+void Funcionario::setHora(double h){
+    hora = h;
+}
+
+void Funcionario::setPercentual(double p){
+    percentual = p;
+}
+
+void Funcionario::setValorDeVendas(double vdv){
+    valorDeVendas = vdv;
+}
+
+double Funcionario::getHora(){
+    return hora;
+}
+
+double Funcionario::getPercentual(){
+    return percentual;
+}
+
+double Funcionario::getValorDeVendas(){
+    return valorDeVendas;
 }
